@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Project from '../src/pages/Project';
+import Group from './pages/Group';
 import AddProject from './pages/Project/AddProject';
 import InvitedProject from './pages/Project/InvitedProject';
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
         <Route path='/projects' element={<Project />} />
         <Route path='/project/add' element={<AddProject />} />
         <Route path='/project/invited' element={<InvitedProject />} />
+        <Route path='/groups' element={<Group />} />
       </Routes>
     </div>
   );
