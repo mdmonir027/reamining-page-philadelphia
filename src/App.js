@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Project from '../src/pages/Project';
+import ActivityLogs from './pages/ActivityLogs';
 import Analysis from './pages/Analysis';
 import AddAnalysis from './pages/Analysis/AddAnalysis';
 import Group from './pages/Group';
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/task/add' element={<AddTask />} />
         <Route path='/ideas' element={<Ideas />} />
         <Route path='/ideas/share' element={<ShareIdeas />} />
+        <Route path='/activity-and-logs' element={<ActivityLogs />} />
       </Routes>
     </div>
   );

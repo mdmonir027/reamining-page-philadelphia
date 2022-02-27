@@ -8,7 +8,7 @@ const ShareIdeasContainer = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    const data = {};
+    const data = { department, contributor };
     console.log(data);
   };
   return (
