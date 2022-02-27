@@ -1,33 +1,6 @@
 import { Button, TextField } from '@mui/material';
 import React, { useState } from 'react';
 
-const departments = [
-  { title: 'Oliver Hansen', value: 'Oliver Hansen' },
-  { title: 'Van Henry', value: 'Van Henry' },
-  { title: 'April Tucker', value: 'April Tucker' },
-  { title: 'Ralph Hubbard', value: 'Ralph Hubbard' },
-  { title: 'Omar Alexander', value: 'Omar Alexander' },
-  { title: 'Carlos Abbott', value: 'Carlos Abbott' },
-  { title: 'Miriam Wagner', value: 'Miriam Wagner' },
-  { title: 'Bradley Wilkerson', value: 'Bradley Wilkerson' },
-  { title: 'Virginia Andrews', value: 'Virginia Andrews' },
-  { title: 'Kelly Snyder', value: 'Kelly Snyder' },
-];
-const labs = [
-  { title: 'Carlos Abbott', value: 'Carlos Abbott' },
-  { title: 'Miriam Wagner', value: 'Miriam Wagner' },
-  { title: 'Bradley Wilkerson', value: 'Bradley Wilkerson' },
-  { title: 'Virginia Andrews', value: 'Virginia Andrews' },
-  { title: 'Kelly Snyder', value: 'Kelly Snyder' },
-];
-const allStatus = [
-  { title: 'Not Started', value: 1 },
-  { title: 'In progress', value: 2 },
-  { title: 'On Hold', value: 3 },
-  { title: 'Cancelled', value: 4 },
-  { title: 'Finished', value: 5 },
-];
-
 const AddGroupContainer = () => {
   const [groupName, setGroupName] = useState('');
   const [groupName2, setGroupName2] = useState('');
