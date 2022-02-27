@@ -7,6 +7,8 @@ import Group from './pages/Group';
 import AddGroup from './pages/Group/AddGroup';
 import AddProject from './pages/Project/AddProject';
 import InvitedProject from './pages/Project/InvitedProject';
+import Task from './pages/Task';
+import AddTask from './pages/Task/AddTask';
 const App = () => {
   return (
     <div>
@@ -18,6 +20,8 @@ const App = () => {
         <Route path='/group/add' element={<AddGroup />} />
         <Route path='/analysis' element={<Analysis />} />
         <Route path='/analysis/add' element={<AddAnalysis />} />
+        <Route path='/task' element={<Task />} />
+        <Route path='/task/add' element={<AddTask />} />
       </Routes>
     </div>
   );
