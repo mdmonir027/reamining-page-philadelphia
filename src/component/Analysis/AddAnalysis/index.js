@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import React, { useState } from 'react';
-import CustomSelect from './CustomSelect';
+import CustomSelect from '../../shared/CustomSelect';
 
 const AddAnalysisContainer = () => {
   const [department, setDepartment] = useState(departments[0].value);

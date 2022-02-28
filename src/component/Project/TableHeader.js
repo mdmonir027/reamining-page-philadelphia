@@ -1,12 +1,10 @@
 import React from 'react';
+import TableHeading from '../shared/TableHeading';
 
 const TableHeader = () => {
   return (
     <div>
-      <h2 className='text-center my-3 text-2xl border-b-2 border-gray-200 pb-3'>
-        My Project Summary
-      </h2>
-
+      <TableHeading text={'My Project Summary'} />
       <div>
         <div className='flex justify-between rounded overflow-hidden mt-2'>
           <div className='border w-full p-4  text-center'>

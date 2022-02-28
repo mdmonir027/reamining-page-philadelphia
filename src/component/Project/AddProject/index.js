@@ -1,33 +1,7 @@
 import { Button, TextField } from '@mui/material';
 import React, { useState } from 'react';
-import CustomDatePicker from './CustomDatePicker';
-import CustomSelect from './CustomSelect';
-const departments = [
-  { title: 'Oliver Hansen', value: 'Oliver Hansen' },
-  { title: 'Van Henry', value: 'Van Henry' },
-  { title: 'April Tucker', value: 'April Tucker' },
-  { title: 'Ralph Hubbard', value: 'Ralph Hubbard' },
-  { title: 'Omar Alexander', value: 'Omar Alexander' },
-  { title: 'Carlos Abbott', value: 'Carlos Abbott' },
-  { title: 'Miriam Wagner', value: 'Miriam Wagner' },
-  { title: 'Bradley Wilkerson', value: 'Bradley Wilkerson' },
-  { title: 'Virginia Andrews', value: 'Virginia Andrews' },
-  { title: 'Kelly Snyder', value: 'Kelly Snyder' },
-];
-const labs = [
-  { title: 'Carlos Abbott', value: 'Carlos Abbott' },
-  { title: 'Miriam Wagner', value: 'Miriam Wagner' },
-  { title: 'Bradley Wilkerson', value: 'Bradley Wilkerson' },
-  { title: 'Virginia Andrews', value: 'Virginia Andrews' },
-  { title: 'Kelly Snyder', value: 'Kelly Snyder' },
-];
-const allStatus = [
-  { title: 'Not Started', value: 1 },
-  { title: 'In progress', value: 2 },
-  { title: 'On Hold', value: 3 },
-  { title: 'Cancelled', value: 4 },
-  { title: 'Finished', value: 5 },
-];
+import CustomDatePicker from '../../shared/CustomDatePicker';
+import CustomSelect from '../../shared/CustomSelect';
 
 const AddProjectContainer = () => {
   const [department, setDepartment] = useState(departments[0].value);
@@ -153,3 +127,29 @@ const AddProjectContainer = () => {
 };
 
 export default AddProjectContainer;
+const departments = [
+  { title: 'Oliver Hansen', value: 'Oliver Hansen' },
+  { title: 'Van Henry', value: 'Van Henry' },
+  { title: 'April Tucker', value: 'April Tucker' },
+  { title: 'Ralph Hubbard', value: 'Ralph Hubbard' },
+  { title: 'Omar Alexander', value: 'Omar Alexander' },
+  { title: 'Carlos Abbott', value: 'Carlos Abbott' },
+  { title: 'Miriam Wagner', value: 'Miriam Wagner' },
+  { title: 'Bradley Wilkerson', value: 'Bradley Wilkerson' },
+  { title: 'Virginia Andrews', value: 'Virginia Andrews' },
+  { title: 'Kelly Snyder', value: 'Kelly Snyder' },
+];
+const labs = [
+  { title: 'Carlos Abbott', value: 'Carlos Abbott' },
+  { title: 'Miriam Wagner', value: 'Miriam Wagner' },
+  { title: 'Bradley Wilkerson', value: 'Bradley Wilkerson' },
+  { title: 'Virginia Andrews', value: 'Virginia Andrews' },
+  { title: 'Kelly Snyder', value: 'Kelly Snyder' },
+];
+const allStatus = [
+  { title: 'Not Started', value: 1 },
+  { title: 'In progress', value: 2 },
+  { title: 'On Hold', value: 3 },
+  { title: 'Cancelled', value: 4 },
+  { title: 'Finished', value: 5 },
+];

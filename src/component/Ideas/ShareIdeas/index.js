@@ -1,6 +1,6 @@
 import { Button, TextField } from '@mui/material';
 import React, { useState } from 'react';
-import CustomSelect from './CustomSelect';
+import CustomSelect from '../../shared/CustomSelect';
 const ShareIdeasContainer = () => {
   const [department, setDepartment] = useState(departments[0].value);
   const [contributor, setContributor] = useState('');

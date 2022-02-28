@@ -1,6 +1,6 @@
 import { DataGrid } from '@mui/x-data-grid';
 import React, { useEffect, useState } from 'react';
-import ExportCustomToolbar from './CustomToolBar';
+import CustomToolBar from '../shared/CustomToolbar';
 
 const rows = [];
 
@@ -53,7 +53,7 @@ const Table = () => {
         onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
         rowsPerPageOptions={[10, 20, 30, 50]}
         pagination
-        components={{ Toolbar: ExportCustomToolbar }}
+        components={{ Toolbar: CustomToolBar }}
         componentsProps={{ toolbar: { data, columns } }}
         style={{ border: 'none' }}
       />

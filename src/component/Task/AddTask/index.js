@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
 import React, { useState } from 'react';
-import CustomSelect from './CustomSelect';
+import CustomSelect from '../../shared/CustomSelect';
 
 const AddTaskContainer = () => {
   const [user, setUser] = useState(users[0].value);

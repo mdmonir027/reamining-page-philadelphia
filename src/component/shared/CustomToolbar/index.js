@@ -1,11 +1,11 @@
 import { GridToolbarContainer } from '@mui/x-data-grid';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
-import * as React from 'react';
+import React from 'react';
 import { CSVLink } from 'react-csv';
 import * as XLSX from 'xlsx';
 
-const CustomToolbar = ({ data, columns }) => {
+const CustomToolbar = ({ data, columns, searchTerm, onChange }) => {
   const downloadExcel = () => {
     const newData = data.map((row) => {
       delete row.id;
@@ -48,6 +48,7 @@ const CustomToolbar = ({ data, columns }) => {
       }),
     filename: 'Projects.csv',
   };
+
   return (
     <GridToolbarContainer className='my-3 mx-3 justify-between'>
       <div className='flex rounded overflow-hidden'>
@@ -72,7 +73,8 @@ const CustomToolbar = ({ data, columns }) => {
       <div className='border rounded p-2 w-4/12'>
         <input
           type='search'
-          name=''
+          value={searchTerm}
+          onChange={onChange}
           className='outline-none w-full'
           placeholder='Search here'
           id=''
